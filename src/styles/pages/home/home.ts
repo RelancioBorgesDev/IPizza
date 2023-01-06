@@ -104,6 +104,87 @@ export const SliderInfoContainer = styled.div`
 
 
 export const AboutSection = styled.section`
-    height: calc(100vh);
+    height: 100%;
+    
+`
 
+export const AboutContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+
+    @media(max-width: 765px){
+        align-items: center;
+    }
+   
+`
+
+export const ImageAboutSection = styled(Image)`
+    width: 50rem;
+    height: 30rem;
+
+    @media(max-width: 1300px){
+        width: 40rem;
+    }
+
+    @media(max-width: 1050px){
+        width: 35rem;
+    }
+    @media(max-width: 975px){
+        width: 30rem;
+    }
+
+
+    @media(max-width: 765px){
+        display: none;
+    }
+`
+
+export const AboutContentContainer = styled.div`
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1{
+        font-size: ${({theme}) => theme.fontSizes.xl};
+        font-weight: ${({theme}) => theme.fontWeights.bold};
+        color: ${({theme}) => theme.colors.orange};
+        letter-spacing: 5px;
+    }
+
+    p{
+        font-size: ${({theme}) => theme.fontSizes.md};
+        line-height: 20px;
+
+    }
+
+    @media(max-width: 1300px){
+        padding: 1rem;
+
+        h1{
+            font-size: ${({theme}) => theme.fontSizes.lg};
+        }
+
+        p{
+            line-height: normal;
+        }
+    }
+
+    @media(max-width: 975px){
+        p{
+            font-size: ${({theme}) => theme.fontSizes.sm};
+        }
+    }
+
+    @media(max-width: 765px){
+        align-items: center;
+        h1{
+            font-size: ${({theme}) => theme.fontSizes.md};
+        }
+        p{
+            font-size: ${({theme}) => theme.fontSizes.sm};
+        }
+    }
+    
 `
