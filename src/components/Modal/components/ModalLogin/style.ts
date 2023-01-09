@@ -43,7 +43,7 @@ export const FormContainer = styled.form`
     justify-content: center;
     
     padding: 1rem;
-    gap: 1rem;
+    gap: .5rem;
 
 
     input {

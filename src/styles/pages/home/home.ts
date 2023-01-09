@@ -188,3 +188,14 @@ export const AboutContentContainer = styled.div`
     }
     
 `
+
+
+export const MenuSection = styled.div`
+    height: 100vh;
+
+
+
+
+`
+
+
