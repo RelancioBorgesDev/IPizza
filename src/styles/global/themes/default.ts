@@ -7,6 +7,7 @@ export const defaultTheme = {
         black_text: "#232528",
         platinum_text: "#E5E5E5",
         pink_bg: "#E8D6CB" ,
+        green_money: "#218D43"
     },
     "fontSizes": {
         tn: "0.5rem",
