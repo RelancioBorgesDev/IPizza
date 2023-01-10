@@ -86,32 +86,32 @@ export default function ModalCadastro() {
           <InputContainer>
             <input
               type='text'
-              placeholder='Digite seu nome'
+              placeholder='Digite seu nome completo*'
               {...register("nome")}
             />
             <ErrorText>{errors?.nome?.message}</ErrorText>
 
             <input
               type='email'
-              placeholder='Digite seu email'
+              placeholder='Digite seu email*'
               {...register("email")}
             />
             <ErrorText>{errors?.email?.message}</ErrorText>
             <input
               type='email'
-              placeholder='Confirme seu email'
+              placeholder='Confirme seu email*'
               {...register("confirmaEmail")}
             />
             <ErrorText>{errors?.confirmaEmail?.message}</ErrorText>
             <input
               type='password'
-              placeholder='Digite sua senha'
+              placeholder='Digite sua senha*'
               {...register("senha")}
             />
             <ErrorText>{errors?.senha?.message}</ErrorText>
             <input
               type='password'
-              placeholder='Confirme sua senha'
+              placeholder='Confirme sua senha*'
               {...register("confirmaSenha")}
             />
             <ErrorText>{errors?.confirmaSenha?.message}</ErrorText>

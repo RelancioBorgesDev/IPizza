@@ -61,13 +61,13 @@ export default function ModalLogin() {
         <Description>Faça seu login para entrar no site</Description>
         <input
           type='email'
-          placeholder='Digite seu email'
+          placeholder='Digite seu email*'
           {...register("email")}
         />
         <ErrorText>{errors?.email?.message}</ErrorText>
         <input
           type='password'
-          placeholder='Digite sua senha'
+          placeholder='Digite sua senha*'
           {...register("senha")}
         />
         <ErrorText>{errors?.senha?.message}</ErrorText>
