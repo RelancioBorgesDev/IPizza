@@ -112,7 +112,7 @@ export const AboutContainer = styled.div`
     display: flex;
     justify-content: center;
     gap: .2rem;
-
+    
     @media(max-width: 765px){
         align-items: center;
     }
@@ -120,7 +120,7 @@ export const AboutContainer = styled.div`
 `
 
 export const ImageAboutSection = styled(Image)`
-    width: 50rem;
+    width: 80rem;
     height: 30rem;
 
     @media(max-width: 1300px){
@@ -141,10 +141,14 @@ export const ImageAboutSection = styled(Image)`
 `
 
 export const AboutContentContainer = styled.div`
-    padding: 3rem;
+    height: 480px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow-y:scroll;
+    position:relative; 
+
 
     h1{
         font-size: ${({theme}) => theme.fontSizes.xl};
@@ -189,13 +193,120 @@ export const AboutContentContainer = styled.div`
     
 `
 
-
+/* Menu Section */
 export const MenuSection = styled.div`
-    height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: ${({theme}) => theme.colors.dark_red};
+    padding: 5rem 2rem;
+
+      h1{
+        font-size: ${({theme}) => theme.fontSizes.xl};
+        font-weight: ${({theme}) => theme.fontWeights.bold};
+        color: ${({theme}) => theme.colors.platinum_text};
+        letter-spacing: 2px;
+        text-shadow: 4px 2px 2px 4px rgba(0,0,0,2);
+      }
+      
+      > p{
+        font-size: ${({theme}) => theme.fontSizes.md};
+        font-weight: ${({theme}) => theme.fontWeights.bold};
+        color: ${({theme}) => theme.colors.platinum_text};
+      }
 
 
+    @media(max-width: 375px){
+        gap: 2rem;
+        text-align: center;
+    }
+`
+export const ContainerCardapioItems = styled.div`
+    width: 100%;
+    h2{
+        border-bottom: 2px solid ${({theme}) => theme.colors.orange};
+        padding: .2rem;
+        color: ${({theme}) => theme.colors.platinum_text};
+    }
 
 
 `
 
+/* Seção Contato */
+
+export const ContatoContainer = styled.section`
+    height: 100%;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+
+    @media(max-width: 675px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     
+    }
+`
+
+export const ContatoTitle = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h1{
+        font-size: ${({theme}) => theme.fontSizes.xl};
+        color: ${({theme}) => theme.colors.orange};
+        letter-spacing: 5px;
+    }
+
+    p{
+        font-size: ${({theme}) => theme.fontSizes.md};
+        color: ${({theme}) => theme.colors.black_text};
+        letter-spacing: 2px;
+        line-height: 20px;
+        text-align: justify;
+        text-indent: 10px;
+    }
+
+    @media(max-width: 1300px){
+        h1{
+            font-size: ${({theme}) => theme.fontSizes.xl};
+            color: ${({theme}) => theme.colors.orange};
+            letter-spacing: 5px;
+        }
+        p{
+            font-size: ${({theme}) => theme.fontSizes.md};
+            color: ${({theme}) => theme.colors.black_text};
+        }
+    }
+
+    @media(max-width: 1050px){
+        h1{
+            font-size: ${({theme}) => theme.fontSizes.xl};
+        }
+        p{
+            font-size: ${({theme}) => theme.fontSizes.md};
+            color: ${({theme}) => theme.colors.black_text};
+        }
+    }
+
+    @media(max-width: 675px){
+        h1{
+            font-size: ${({theme}) => theme.fontSizes.md_lg};
+        }
+        p{
+            font-size: ${({theme}) => theme.fontSizes.sm};
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     
+    }
+`
 
