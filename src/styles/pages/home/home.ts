@@ -262,13 +262,14 @@ export const ContatoTitle = styled.div`
         font-size: ${({theme}) => theme.fontSizes.xl};
         color: ${({theme}) => theme.colors.orange};
         letter-spacing: 5px;
+        text-align: justify;
     }
 
     p{
-        font-size: ${({theme}) => theme.fontSizes.md};
+        font-size: ${({theme}) => theme.fontSizes.lg};
         color: ${({theme}) => theme.colors.black_text};
         letter-spacing: 2px;
-        line-height: 20px;
+        line-height: 40px;
         text-align: justify;
         text-indent: 10px;
     }
@@ -288,6 +289,7 @@ export const ContatoTitle = styled.div`
     @media(max-width: 1050px){
         h1{
             font-size: ${({theme}) => theme.fontSizes.xl};
+            text-align: center;
         }
         p{
             font-size: ${({theme}) => theme.fontSizes.md};
@@ -297,7 +299,7 @@ export const ContatoTitle = styled.div`
 
     @media(max-width: 675px){
         h1{
-            font-size: ${({theme}) => theme.fontSizes.md_lg};
+            font-size: ${({theme}) => theme.fontSizes.md};
         }
         p{
             font-size: ${({theme}) => theme.fontSizes.sm};

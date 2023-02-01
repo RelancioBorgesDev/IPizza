@@ -12,14 +12,24 @@ let settings = {
   autoplaySpeed: 3000,
   slidesToShow: 3,
 
-  responsive: [{
-    breakpoint: 1050,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      initialSlide: 2
-    }
-  }]
+  responsive: [
+    {
+      breakpoint: 1050,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+      },
+    },
+  ],
 };
 export default function SlickSlider({ children }: ISlickSliderProps) {
   return <SliderContainer {...settings}>{children}</SliderContainer>;
