@@ -120,7 +120,7 @@ export const ButtonCadastrar = styled.button`
 
 `
 
-export const ErrorText = styled.small`
+export const ErrorText = styled.span`
     font-size: ${({theme}) => theme.fontSizes.sm};
     font-weight: ${({theme}) => theme.fontWeights.bold};
     color: ${({theme}) => theme.colors.pink_bg};

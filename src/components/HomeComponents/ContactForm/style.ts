@@ -2,15 +2,10 @@ import styled from "styled-components";
 
 export const ContatoForm = styled.form`
     width: 100%;
-    display: grid;
-    grid-template-areas: 
-    "nome" "sobrenome"
-    "email" "telefone"
-    "mensagem" "mensagem"
-    "botao"    
-    ;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
 
     input{
         width: 100%;
@@ -28,25 +23,6 @@ export const ContatoForm = styled.form`
         }
     }
 
-
-    .nome{
-        grid-area: nome;
-    }
-    .sobrenome{
-        grid-area: sobrenome;
-        grid-column: 2;
-        grid-row: 1;
-    }
-    .email{
-        grid-area: email;
-        grid-row: 2;
-        
-    }
-    .telefone{
-        grid-area: telefone;
-        grid-column: 2;
-        grid-row: 2;
-    }
     .mensagem{
         grid-area: mensagem;
         grid-row: auto;
@@ -92,8 +68,12 @@ export const ContatoForm = styled.form`
     }
 
 
-    @media(max-width: 1050px){
-       display: flex;
-       flex-direction: column;
-    }
+`
+export const ErrorText = styled.span`
+    font-size: ${({theme}) => theme.fontSizes.sm};
+    font-weight: ${({theme}) => theme.fontWeights.bold};
+    color: ${({theme}) => theme.colors.light_red};
+    align-self: flex-start;
+    justify-self: flex-start;
+
 `

@@ -266,7 +266,7 @@ export const ContatoTitle = styled.div`
     }
 
     p{
-        font-size: ${({theme}) => theme.fontSizes.lg};
+        font-size: ${({theme}) => theme.fontSizes.md_lg};
         color: ${({theme}) => theme.colors.black_text};
         letter-spacing: 2px;
         line-height: 40px;
