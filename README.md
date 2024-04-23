@@ -1,6 +1,6 @@
 <div align="center" style="margin-bottom: 10px;">
 
-![Project Logo](./src/assets/logo.svg)
+<img src="./src/assets/logo.svg" alt="Project Logo" width="200" height="200">
 
 </div>
 
