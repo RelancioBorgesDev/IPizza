@@ -40,38 +40,36 @@ export default function Home() {
       {/* Sobre */}
       <AboutSection>
         <AboutContainer>
-          <ImageAboutSection src={about} alt='Imagem a esquerda, pizza' />
+          <ImageAboutSection src={about} alt="Imagem a esquerda, pizza" />
           <AboutContentContainer>
             <h1>SOBRE NÓS</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-              necessitatibus, porro officiis itaque, eligendi facilis quod
-              molestias tempora in iure dolorum recusandae hic fugit ab alias
-              totam rerum beatae accusamus?
+              Bem-vindo à IPizza, o seu destino para uma experiência autêntica
+              de pizza italiana. Fundada com paixão e dedicação, na IPizza não
+              apenas fazemos pizza, mas criamos obras de arte gastronômicas que
+              irão deliciar seu paladar e alimentar sua alma. Na IPizza, a
+              qualidade é nossa prioridade.
             </p>
+
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad esse
-              commodi alias optio ipsam odit assumenda expedita, quo voluptates
-              corrupti distinctio dolorum quidem iusto animi officiis et
-              repellendus. Distinctio, minus!
+              Utilizamos apenas os ingredientes mais frescos e autênticos, desde
+              a seleção cuidadosa de nossos queijos até a escolha dos melhores
+              tomates para o nosso molho. Cada pizza é cuidadosamente montada à
+              mão por nossos talentosos pizzaiolos, garantindo que cada mordida
+              seja uma explosão de sabor. Além de nossas pizzas tradicionais,
+              também oferecemos uma variedade de opções para atender a todos os
+              gostos e preferências. Desde pizzas clássicas como Margherita e
+              Pepperoni até criações exclusivas como a Pizza Supreme e a Pizza
+              Vegetariana, há algo para todos na IPizza.
             </p>
+
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              earum unde, sapiente magni qui deleniti. Voluptas id accusantium
-              ullam officia consequatur qui quas fuga a error provident, nemo
-              asperiores neque!
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              earum unde, sapiente magni qui deleniti. Voluptas id accusantium
-              ullam officia consequatur qui quas fuga a error provident, nemo
-              asperiores neque!
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              earum unde, sapiente magni qui deleniti. Voluptas id accusantium
-              ullam officia consequatur qui quas fuga a error provident, nemo
-              asperiores neque!
+              Nosso compromisso com a excelência se estende além da comida. Na
+              IPizza, queremos que cada visita seja uma experiência memorável.
+              Nossa equipe calorosa e acolhedora está aqui para garantir que
+              você se sinta em casa, seja você um cliente regular ou um novo
+              visitante. Então, junte-se a nós na IPizza e descubra o verdadeiro
+              sabor da Itália em cada fatia.
             </p>
           </AboutContentContainer>
         </AboutContainer>
@@ -90,18 +88,16 @@ export default function Home() {
             <CardCardapio />
             <CardCardapio />
             <CardCardapio />
-            
           </SlickSlider>
         </ContainerCardapioItems>
         <ContainerCardapioItems>
           <h2>Esfihas</h2>
           <SlickSlider>
-          <CardCardapio />
             <CardCardapio />
             <CardCardapio />
             <CardCardapio />
             <CardCardapio />
-          
+            <CardCardapio />
           </SlickSlider>
         </ContainerCardapioItems>
       </MenuSection>

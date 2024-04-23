@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Image from 'next/image';
-import pizzabg from '../../../assets/pizzabg.jpg'
-import css from "styled-jsx/css";
+
 
 export const HomeContainer = styled.div`
     width: 100%;
@@ -120,7 +119,7 @@ export const AboutContainer = styled.div`
 `
 
 export const ImageAboutSection = styled(Image)`
-    width: 80rem;
+    width: 100%;
     height: 30rem;
 
     @media(max-width: 1300px){
@@ -141,6 +140,7 @@ export const ImageAboutSection = styled(Image)`
 `
 
 export const AboutContentContainer = styled.div`
+    width: 100%;
     height: 480px;
     padding: 2rem;
     display: flex;
